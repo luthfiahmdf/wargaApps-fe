@@ -42,7 +42,7 @@ export const Layout = () => {
         onLogout={onLogout}
         title="WargaApps"
       />
-      <main className="content flex-1 overflow-y-auto p-5">
+      <main className="content flex-1 overflow-y-auto p-7">
         <Outlet />
       </main>
     </div>

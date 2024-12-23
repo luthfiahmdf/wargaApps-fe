@@ -25,7 +25,7 @@ export const SidebarV2: FC<TSidebarV2> = ({
       <aside
         className={`lg:flex flex-col xl:gap-3 lg:gap-2 items-center min-h-[100vh] justify-between h-screen   hidden shadow-xl ${
           showSideBar
-            ? "2xl:w-[18%] xl:w-[22%] lg:w-[30%] md:w-[30%]"
+            ? "2xl:w-[14%] xl:w-[22%] lg:w-[30%] md:w-[30%]"
             : "lg:w-[12%] 2xl:w-[6%]"
         } border-r border-slate-3 transition-all px-4 py-1 duration-500 ease-in-out overflow-y-hidden`}
         // onMouseEnter={onHoverOn}

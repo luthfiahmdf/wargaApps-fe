@@ -1,10 +1,20 @@
+import { CardDashboard } from "@/components/ui/card-dahboard";
+import { MockCard } from "./store";
+
 export const Dashboard = () => {
   return (
-    <div className="text-center bg-slate-800">
-      <h1 className="text-2xl text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni
-        minus beatae fuga non praesentium libero cupiditate odio distinctio. Ut.
-      </h1>
+    <div className="flex flex-col gap-4 ">
+      <h1 className="text-4xl  ">Dashboard</h1>
+      <div className="flex gap-4">
+        {MockCard.map((item, index) => (
+          <CardDashboard
+            key={index}
+            title={item?.title}
+            color={item.color}
+            value={item?.value}
+          />
+        ))}
+      </div>
     </div>
   );
 };
