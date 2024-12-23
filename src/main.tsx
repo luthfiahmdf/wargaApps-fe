@@ -11,14 +11,14 @@ import { RecoilRoot } from "recoil";
 
 export const Router = createBrowserRouter([
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
   {
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/dashboard",
         element: <Dashboard />,
       },
     ],
